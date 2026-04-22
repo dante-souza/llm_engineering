@@ -20,7 +20,7 @@ kill-pid:
 		taskkill /PID $(PID) /F \
 	)
 
-ollama-serve:
+serve:
 	ollama serve
 
 tags:
