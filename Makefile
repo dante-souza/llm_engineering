@@ -46,3 +46,7 @@ phi3:
 
 gpt:
 	@ollama run gpt-oss
+
+install:
+	pip install uv
+	uv pip install -r requirements.txt
