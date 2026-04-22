@@ -40,3 +40,9 @@ claude:
 
 gemma3:
 	@ollama run gemma3:270m
+
+phi3:
+	@ollama run phi3
+
+gpt:
+	@ollama run gpt-oss
