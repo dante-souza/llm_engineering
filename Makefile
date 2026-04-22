@@ -50,3 +50,6 @@ gpt:
 install:
 	pip install uv
 	uv pip install -r requirements.txt
+
+nb:
+	@jupyter notebook --port 12000
