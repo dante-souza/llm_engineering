@@ -34,3 +34,9 @@ diagnose:
 	@echo   make show-pid PID=1234
 	@echo   make kill-pid PID=1234
 	@echo   make ollama-serve
+
+claude:
+	@ollama run glm-4.7-flash
+
+gemma3:
+	@ollama run gemma3:270m
