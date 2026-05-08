@@ -41,15 +41,31 @@ claude:
 gemma3:
 	@ollama run gemma3:270m
 
+gemma4:
+	@ollama run gemma4
+
 phi3:
 	@ollama run phi3
 
 gpt:
 	@ollama run gpt-oss
 
+deepseek:
+	@ollama pull deepseek-r1:1.5b
+
+llama:
+	@ollama pull llama3.2
+
+mixtral_small:
+	@ollama pull mixtral:8x7b
+
 install:
 	pip install uv
+	uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
 	uv pip install -r requirements.txt
 
 nb:
 	@jupyter notebook --port 12000
+
+check-cuda:
+	nvidia-smi | grep -Hin cuda

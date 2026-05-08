@@ -1,0 +1,7 @@
+selenium
+beautifulsoup4
+pyyaml
+openai
+ipython
+python-dotenv
+rich
